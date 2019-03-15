@@ -51,7 +51,7 @@ class bst
 		else if(curnt->data > value)
 		{	if(curnt->left==NULL)
 			{
-				curnt=new Node(value);
+				curnt->left=new Node(value);
 			}
 			else
 			inserthelp(curnt->left ,value);
@@ -61,7 +61,7 @@ class bst
 		{	
 			if(curnt->ryt==NULL)
 			{
-				curnt=new Node(value);
+				curnt->ryt=new Node(value);
 			}
 			
 			else
